@@ -642,7 +642,7 @@ body {
     -webkit-box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
             box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
     margin: 10px;
-    padding: 20px 10px;
+    padding: 20px 10px 15px;
     gap: 10px;
   }
   .content-home .slider-book .card-slider .img-book {
@@ -684,10 +684,10 @@ body {
     color: #FFF;
   }
   .search-app .logo-page {
-    width: 95px;
+    width: 85px;
   }
   .search-app .user {
-    padding: 10px;
+    padding: 0px;
     position: relative;
   }
   .search-app .user .img-user {
@@ -809,7 +809,7 @@ body {
     font-weight: bold;
   }
   .img-head img {
-    width: 160px;
+    width: 150px;
   }
   .books-section {
     margin: 22px 15px;

@@ -281,7 +281,6 @@ body {
 }
 .content-home .links-home ul li {
   white-space: nowrap;
-  width: 86px;
   height: 27px;
 }
 .content-home .links-home ul li a {
@@ -491,7 +490,7 @@ body {
   height: 260px;
 }
 .books-section .books .card-book p {
-  margin-top: 6px !important;
+  margin-top: 0px !important;
   margin-bottom: -5px !important;
   font-size: 17px;
   font-weight: 500;
@@ -592,12 +591,12 @@ body {
   .content-home .slider-book {
     margin: 0;
     background-color: #FFF;
-    padding: 25px 10px 0px !important;
+    padding: 17px 10px 0px !important;
   }
   .content-home .slider-book .app-search-home {
     display: block !important;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
   }
   .content-home .slider-book .app-search-home input {
     width: 90%;
@@ -630,7 +629,7 @@ body {
   }
   .content-home .slider-book h2 {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-right: 10px;
     font-size: 20px;
   }
@@ -844,7 +843,6 @@ body {
   .books-section .books .card-book p:first-of-type {
     font-size: 15px;
     font-weight: 700;
-    margin-left: 12px;
     margin: 0;
     text-align: center !important;
   }

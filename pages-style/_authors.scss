@@ -188,13 +188,14 @@ $blue-color: #284AC2;
         gap: 20px;
 
         .box-author {
-            height: 334px;
+            height: 280px;
             box-shadow: 0 0 10px 0 #99999974;
             text-align: center;
             display: block;
             color: #000;
             overflow: hidden;
             transition: all .5s;
+            border-radius: 15px;
 
             &:hover {
                 box-shadow: 0 0 10px 0 blue;
@@ -203,7 +204,7 @@ $blue-color: #284AC2;
             
             .name-img {
                 position: relative;
-                padding: 50px 20px 10px 20px;
+                padding: 40px 20px 0px 20px;
                 border-bottom: 1px solid #CCC;
 
                 img {
@@ -215,6 +216,9 @@ $blue-color: #284AC2;
 
                 p {
                     margin-top: 0;
+                    margin-bottom: 5px;
+                    font-size: 13px;
+                    font-weight: 600;
                 }
 
                 &::before {
@@ -223,7 +227,7 @@ $blue-color: #284AC2;
                     top: 0;
                     left: 0;
                     width: 100%;
-                    height: 100px;
+                    height: 90px;
                     background-color: #3e5fd7;
                 }
             }
@@ -231,10 +235,23 @@ $blue-color: #284AC2;
             .info {
                 padding: 10px 20px 10px 20px;
 
+                .rate {
+                    img {
+                        height: 11px;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        display: inline-block;
+                        margin-top: -5px;
+                    }
+                }
+
                 p {
                     margin-top: 5px;
                     color: #3e5fd7;
-                    font-size: 18px;
+                    margin-bottom: 8px;
+                    font-size: 16px;
 
                     span {
                         color: #000;
@@ -275,6 +292,38 @@ $blue-color: #284AC2;
             color: #959595;
             gap: 10px;
             font-size: 14px;
+
+            .box-author {
+
+                .name-img {
+                    padding: 50px 20px 0px 20px;
+
+                    p {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .info {
+                    padding: 10px 15px 0px 15px;
+
+                    .rate {
+                        img {
+                            height: 11px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            margin-top: -12px;
+                            display: inline-block;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 8px;
+                        font-size: 16px;
+                    }
+                }
+            }
         } 
     }
 

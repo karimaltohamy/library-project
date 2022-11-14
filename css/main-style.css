@@ -259,7 +259,7 @@ body {
   margin: 85px 140px 0 0;
 }
 .content-home .links-home {
-  padding: 12px 25px;
+  padding: 0px 25px;
   border-bottom: 1px solid #E6E6E6;
   position: relative;
 }
@@ -491,13 +491,14 @@ body {
   height: 260px;
 }
 .books-section .books .card-book p {
-  margin-top: 15px;
+  margin-top: 6px !important;
+  margin-bottom: -5px !important;
   font-size: 17px;
   font-weight: 500;
   text-align: center;
 }
 .books-section .books .card-book > div {
-  margin-top: 5px;
+  margin-top: -12px;
 }
 .books-section .books .card-book > div span {
   font-size: 15px;
@@ -517,7 +518,6 @@ body {
   .head-page {
     display: none !important;
   }
-
   .aside {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -581,7 +581,6 @@ body {
   .aside span {
     font-size: 10px;
   }
-
   .content-home {
     margin: 0;
     border-radius: 30px 30px 0 0;
@@ -593,7 +592,7 @@ body {
   .content-home .slider-book {
     margin: 0;
     background-color: #FFF;
-    padding: 30px 10px 25px !important;
+    padding: 25px 10px 0px !important;
   }
   .content-home .slider-book .app-search-home {
     display: block !important;
@@ -665,14 +664,12 @@ body {
   .content-home .slider-book .slick-track {
     gap: 0;
   }
-
   .links-app {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     border: none !important;
   }
-
   .search-app {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,7 +680,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 11px 22px 5px 22px;
+    padding: 0px 22px 0px 22px;
     background-color: #284AC2;
     color: #FFF;
   }
@@ -794,7 +791,6 @@ body {
   .search-app .user .drop-menu .logout a img {
     width: 22px;
   }
-
   .img-head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -805,7 +801,7 @@ body {
     background-color: #284AC2;
     margin-top: -10px;
     padding-top: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     color: #FFF;
   }
   .img-head p {
@@ -814,11 +810,10 @@ body {
     font-weight: bold;
   }
   .img-head img {
-    width: 200px;
+    width: 160px;
   }
-
   .books-section {
-    margin: 35px 15px;
+    margin: 22px 15px;
     padding-bottom: 80px;
   }
   .books-section h2 {
@@ -832,11 +827,11 @@ body {
             justify-content: center;
   }
   .books-section .books .card-book {
-    min-height: 334px;
+    min-height: 310px;
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
     overflow: hidden;
-    text-align: left;
+    border-radius: 15px;
   }
   .books-section .books .card-book .img-book {
     margin: 0 !important;
@@ -844,20 +839,18 @@ body {
   }
   .books-section .books .card-book .img-book img {
     width: 100% !important;
-    height: 220px !important;
+    height: 210px !important;
   }
   .books-section .books .card-book p:first-of-type {
     font-size: 15px;
     font-weight: 700;
     margin-left: 12px;
-    text-align: left;
+    margin: 0;
+    text-align: center !important;
   }
   .books-section .books .card-book span:first-of-type {
     font-size: 12px;
     color: #6A6A6A;
-    margin-left: 12px;
-  }
-  .books-section .books .card-book > div:first-of-type {
     margin-left: 12px;
   }
   .books-section .books .card-book > div:first-of-type img {
@@ -870,9 +863,8 @@ body {
 }
 @media (max-width: 310px) {
   .search-app {
-    padding: 20px 10px 5px 10px;
+    padding: 0px 22px 0px 22px;
   }
-
   .img-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -880,7 +872,6 @@ body {
             flex-direction: column;
     padding-right: 10px;
   }
-
   .card-slider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -890,7 +881,6 @@ body {
   .card-slider .img-book {
     width: 100% !important;
   }
-
   .books-section .books {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -1483,7 +1473,6 @@ body {
   .head-page-details {
     display: none;
   }
-
   .head-details-page-app {
     display: block;
     width: 100%;
@@ -1503,11 +1492,9 @@ body {
     padding: 20px;
     color: #FFF;
   }
-
   .aside-details {
     display: none;
   }
-
   .content-book-details {
     margin: 0;
     margin-top: -170px;
@@ -1589,7 +1576,6 @@ body {
   .content-book-details .interaction .form-site {
     display: none !important;
   }
-
   .info-interaction-spp {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1619,7 +1605,6 @@ body {
   .info-interaction-spp div:not(:first-of-type) {
     border-right: 1px solid #c5c5c5;
   }
-
   .rate-this-book {
     display: block !important;
     text-align: center;
@@ -1632,7 +1617,6 @@ body {
   .rate-this-book p {
     margin-top: 10px;
   }
-
   .book-author-app {
     display: block;
     padding: 20px 30px;
@@ -1683,7 +1667,6 @@ body {
   .book-author-app .athor-info div span:last-of-type {
     color: grey;
   }
-
   .form-app {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -1999,7 +1982,6 @@ body {
   .head-page-bookmark {
     display: none !important;
   }
-
   .aside-bookmark {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -2039,7 +2021,6 @@ body {
     gap: 10px;
     font-size: 14px;
   }
-
   .head-bookmark-app {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2066,7 +2047,6 @@ body {
   .head-bookmark-app a img {
     width: 25px;
   }
-
   .contnet-bookmark {
     margin: 0;
     padding: 20px !important;
@@ -2121,7 +2101,6 @@ body {
   .contnet-bookmark .mark-black {
     display: none !important;
   }
-
   .app-search {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -2287,7 +2266,6 @@ body {
   .head-upload .head-app p {
     margin-top: 5px;
   }
-
   .page-upload {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -2308,7 +2286,6 @@ body {
   .page-upload .content-page .box-category div span {
     padding: 10px 50px !important;
   }
-
   .btn-next {
     width: 330px !important;
   }
@@ -2498,7 +2475,6 @@ body {
   .head-upload-2 .head-app p {
     margin-top: 5px;
   }
-
   .page-upload-2 {
     background-color: #FFF;
     overflow: hidden;
@@ -2770,7 +2746,6 @@ body {
   .head-upload-3 .head-app p {
     margin-top: 5px;
   }
-
   .page-upload-3 {
     background-color: #FFF;
     overflow: hidden;
@@ -2790,7 +2765,6 @@ body {
   .page-upload-3 .content-page-3 .form form {
     width: 95%;
   }
-
   .btn-upload {
     width: 100% !important;
   }
@@ -3238,11 +3212,9 @@ body {
   .head-page-profile-1 {
     display: none;
   }
-
   .aside-profile-1 {
     display: none;
   }
-
   .head-app-profile-1 {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -3261,7 +3233,6 @@ body {
     color: #FFF;
     font-size: 20px;
   }
-
   .content-profile-1 {
     margin: 0;
     padding: 0;
@@ -3755,11 +3726,9 @@ body {
   .head-page-profile-2 {
     display: none;
   }
-
   .aside-profile-2 {
     display: none;
   }
-
   .head-app-profile-2 {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -3778,7 +3747,6 @@ body {
     color: #FFF;
     font-size: 20px;
   }
-
   .content-profile-2 {
     margin: 0;
     padding: 0;
@@ -4377,11 +4345,9 @@ body {
     display: -ms-flexbox !important;
     display: flex !important;
   }
-
   .head-page-chats {
     display: none !important;
   }
-
   .aside-chats {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -4421,7 +4387,6 @@ body {
     gap: 10px;
     font-size: 14px;
   }
-
   .content-chats {
     margin: 0;
     height: auto;
@@ -4766,7 +4731,6 @@ body {
   .head-page-authors {
     display: none;
   }
-
   .aside-authors {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -4806,7 +4770,6 @@ body {
     gap: 10px;
     font-size: 14px;
   }
-
   .head-app-authors {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -4821,7 +4784,6 @@ body {
     padding: 25px;
     color: #FFF;
   }
-
   .content-authors {
     margin: 0;
     padding-bottom: 100px;

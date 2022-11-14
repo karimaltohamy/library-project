@@ -225,7 +225,7 @@ body {
     margin: 85px 140px 0 0;
 
     .links-home {
-        padding: 12px 25px;
+        padding: 0px 25px;
         border-bottom: 1px solid #E6E6E6;
         position: relative;
 
@@ -436,14 +436,15 @@ body {
             }
     
             p {
-                margin-top: 15px;
+                margin-top: 6px !important;
+                margin-bottom: -5px !important;
                 font-size: 17px;
                 font-weight: 500;
                 text-align: center;
             }
     
             >div {
-                margin-top: 5px;
+                margin-top: -12px;
 
                 span {
                     font-size: 15px;
@@ -544,7 +545,7 @@ body {
         .slider-book {
             margin: 0;
             background-color: $bg-color;
-            padding: 25px 10px 20px !important;
+            padding: 25px 10px 0px !important;
             
             .app-search-home {
                 display: block !important;
@@ -633,7 +634,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 11px 22px 5px 22px;
+        padding: 0px 22px 0px 22px;
         background-color: $blue-color;
         color: #FFF;
 
@@ -765,7 +766,7 @@ body {
         }
 
         img {
-            width: 200px;
+            width: 160px;
         }
     }
 
@@ -782,11 +783,11 @@ body {
             justify-content: center;
     
             .card-book {
-                min-height: 334px;
+                min-height: 310px;
                 text-align: center;
-                padding: 0 0 20px 0;
+                padding: 0 0 0 0;
                 overflow: hidden;
-                text-align: left;
+                border-radius: 15px;
 
                 .img-book {
                     margin: 0 !important;
@@ -794,7 +795,7 @@ body {
 
                     img {
                         width: 100% !important;
-                        height: 220px !important;
+                        height: 210px !important;
                     }
                 }
     
@@ -802,7 +803,8 @@ body {
                     font-size: 15px;
                     font-weight: 700;
                     margin-left: 12px;
-                    text-align: left;
+                    margin: 0;
+                    text-align: center !important;
                 }
 
                 span:first-of-type{
@@ -812,7 +814,6 @@ body {
                 }
 
                 > div:first-of-type {
-                    margin-left: 12px;
 
                     img {
                         height: 12px;
@@ -831,7 +832,7 @@ body {
 @media (max-width: 310px) {
 
     .search-app {
-        padding: 20px 10px 5px 10px;
+        padding: 0px 22px 0px 22px;
     }
 
     .img-head {

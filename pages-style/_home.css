@@ -259,7 +259,7 @@ body {
   margin: 85px 140px 0 0;
 }
 .content-home .links-home {
-  padding: 15px 25px;
+  padding: 12px 25px;
   border-bottom: 1px solid #E6E6E6;
   position: relative;
 }
@@ -281,6 +281,8 @@ body {
 }
 .content-home .links-home ul li {
   white-space: nowrap;
+  width: 86px;
+  height: 27px;
 }
 .content-home .links-home ul li a {
   color: #343434;
@@ -288,7 +290,7 @@ body {
   border: 1px solid #DCDCDC;
   padding: 5px 20px;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .content-home .links-home ul .active-link {
   background-color: #232323;
@@ -465,7 +467,6 @@ body {
   padding: 25px 20px;
   -webkit-box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.662745098);
           box-shadow: 0 0 10px 0 rgba(182, 182, 182, 0.662745098);
-  border-radius: 20px;
   display: block;
   color: #000;
   min-height: 430px;
@@ -506,6 +507,9 @@ body {
   top: 35px;
   left: 25px;
 }
+.books-section .books .card-book .mark-icon img {
+  width: 42px;
+}
 
 /* End Books Section */
 /* Start Responsive Page */
@@ -513,7 +517,6 @@ body {
   .head-page {
     display: none !important;
   }
-
   .aside {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -531,9 +534,6 @@ body {
     z-index: 999;
     background-color: #FFF;
     padding: 15px 0 !important;
-  }
-  .aside .profile-user {
-    display: none !important;
   }
   .aside .authors {
     display: -webkit-box;
@@ -553,7 +553,33 @@ body {
     gap: 10px;
     font-size: 14px;
   }
-
+  .aside img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .aside img:first-child {
+    width: 26px;
+    height: 18px;
+  }
+  .aside img:nth-child(2) {
+    width: 13px;
+    height: 18px;
+  }
+  .aside img:nth-child(3) {
+    width: 18px;
+    height: 18px;
+  }
+  .aside img:nth-child(4) {
+    width: 20px;
+    height: 20px;
+  }
+  .aside img:nth-child(5) {
+    width: 20px;
+    height: 20px;
+  }
+  .aside span {
+    font-size: 10px;
+  }
   .content-home {
     margin: 0;
     border-radius: 30px 30px 0 0;
@@ -565,7 +591,7 @@ body {
   .content-home .slider-book {
     margin: 0;
     background-color: #FFF;
-    padding: 30px 10px !important;
+    padding: 25px 10px 20px !important;
   }
   .content-home .slider-book .app-search-home {
     display: block !important;
@@ -604,7 +630,8 @@ body {
   .content-home .slider-book h2 {
     margin: 0;
     margin-bottom: 15px;
-    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
   }
   .content-home .slider-book .next-arrow,
 .content-home .slider-book .prev-arrow {
@@ -619,7 +646,7 @@ body {
     gap: 10px;
   }
   .content-home .slider-book .card-slider .img-book {
-    width: 35% !important;
+    width: 35%;
   }
   .content-home .slider-book .card-slider p:first-of-type {
     font-size: 16px !important;
@@ -636,14 +663,12 @@ body {
   .content-home .slider-book .slick-track {
     gap: 0;
   }
-
   .links-app {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     border: none !important;
   }
-
   .search-app {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -654,12 +679,12 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 20px 22px 30px 22px;
+    padding: 11px 22px 5px 22px;
     background-color: #284AC2;
     color: #FFF;
   }
   .search-app .logo-page {
-    width: 110px;
+    width: 95px;
   }
   .search-app .user {
     padding: 10px;
@@ -668,8 +693,8 @@ body {
   .search-app .user .img-user {
     background-color: white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -681,18 +706,19 @@ body {
             align-items: center;
   }
   .search-app .user .img-user img {
-    width: 50px;
-    height: 50px;
+    height: 44px;
+    width: 44px;
     overflow: hidden;
   }
   .search-app .user .drop-menu {
     position: absolute;
-    left: 15px;
-    top: 80px;
+    left: -10px;
+    top: 75px;
     background-color: #FFF;
     width: 200px;
-    padding: 15px;
+    padding: 10px;
     display: none;
+    border-radius: 15px;
   }
   .search-app .user .drop-menu.open-menu {
     display: block !important;
@@ -702,20 +728,26 @@ body {
     font-weight: 600;
   }
   .search-app .user .drop-menu .link-profile {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     display: block;
-    text-align: left;
+    text-align: right;
     position: relative;
+    font-size: 14px;
   }
   .search-app .user .drop-menu .link-profile::before {
     content: "";
     position: absolute;
-    top: -37px;
-    left: -5px;
+    top: -33px;
+    left: 18px;
     border: 13px solid;
     border-color: transparent transparent #FFF transparent;
   }
-  .search-app .user .drop-menu .lang {
+  .search-app .user .drop-menu .box-lang .title-lang {
+    color: #284AC2;
+    margin: 0;
+    font-size: 14px;
+  }
+  .search-app .user .drop-menu .box-lang .lang {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -723,13 +755,25 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 20px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-bottom: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 10px;
   }
-  .search-app .user .drop-menu .lang img {
-    width: 40px;
+  .search-app .user .drop-menu .box-lang .lang .choose-lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+  }
+  .search-app .user .drop-menu .box-lang .lang .choose-lang img {
+    width: 23px;
+  }
+  .search-app .user .drop-menu .box-lang .lang .choose-lang span {
+    font-size: 14px;
   }
   .search-app .user .drop-menu .logout a {
     display: -webkit-box;
@@ -739,14 +783,13 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 10px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .search-app .user .drop-menu .logout a img {
-    width: 25px;
+    width: 22px;
   }
-
   .img-head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -756,8 +799,8 @@ body {
             align-items: center;
     background-color: #284AC2;
     margin-top: -10px;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 40px;
     color: #FFF;
   }
   .img-head p {
@@ -768,9 +811,8 @@ body {
   .img-head img {
     width: 200px;
   }
-
   .books-section {
-    margin: 35px 15px;
+    margin: 22px 15px;
     padding-bottom: 80px;
   }
   .books-section h2 {
@@ -784,7 +826,7 @@ body {
             justify-content: center;
   }
   .books-section .books .card-book {
-    min-height: 390px;
+    min-height: 334px;
     text-align: center;
     padding: 0 0 20px 0;
     overflow: hidden;
@@ -795,18 +837,35 @@ body {
   }
   .books-section .books .card-book .img-book img {
     width: 100% !important;
-    height: 240px !important;
-    border-radius: 20px 20px 0 0;
+    height: 220px !important;
+  }
+  .books-section .books .card-book p:first-of-type {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 12px;
+    margin: 0;
+    text-align: center;
+  }
+  .books-section .books .card-book span:first-of-type {
+    font-size: 12px;
+    color: #6A6A6A;
+    margin-left: 12px;
+  }
+  .books-section .books .card-book > div:first-of-type {
+    margin-left: 12px;
+  }
+  .books-section .books .card-book > div:first-of-type img {
+    height: 12px;
   }
   .books-section .books .card-book .mark-icon {
     left: 10px !important;
     top: 10px !important;
   }
-  .books-section .books .card-book p:first-of-type {
-    font-size: 15px;
-  }
 }
 @media (max-width: 310px) {
+  .search-app {
+    padding: 20px 10px 5px 10px;
+  }
   .img-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -814,7 +873,15 @@ body {
             flex-direction: column;
     padding-right: 10px;
   }
-
+  .card-slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-slider .img-book {
+    width: 100% !important;
+  }
   .books-section .books {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);

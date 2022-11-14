@@ -339,7 +339,7 @@ body {
             background-color: $bg-color;
             padding: 20px;
             border-radius: 15px;
-            height: 250px;
+            height: 220px;
             direction: rtl;
             
             .img-book {
@@ -357,28 +357,35 @@ body {
 
                 p:first-of-type {
                     font-weight: 600;
-                    font-size: 15px;
-                    margin: 7px 0;
+                    font-size: 13px !important;
+                    margin: 0;
                 }
 
                 p:last-of-type {
+                    margin-bottom: 8px;
                     display: flex;
                     align-items: center;
                     gap: 6px;
                     font-size: 15px;
-                    margin: 5px 0 20px 0;
+                    margin: 0px 0 13px 0;
+                    color: #6A6A6A;
+                    transform: translateY(-7px) !important;
                 }
 
                 >div {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+
+                    span {
+                        transform: translateY(11px) !important;
+                    }
                     
                     a {
                         color: #FFF;
                         background-color: #284AC2;
                         width: fit-content;
-                        padding: 5px 20px;
+                        padding: 2px 15px;
                         border-radius: 20px;
                         font-size: 13px;
                     }
@@ -398,6 +405,12 @@ body {
     }
 }
 /* End Slider Book Home */
+
+hr {
+    display: none;
+    padding: 0 15px;
+    color: #00000029;
+}
 
 /* Start Books Section */
 .books-section {
@@ -427,6 +440,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 position: relative;
+                width: 40%;
 
                 img:first-of-type {
                     width: 200px ;
@@ -539,12 +553,24 @@ body {
 
         .links-home {
             display: none;
+            margin-top: 10px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 95%;
+                background-color: rgb(228 228 228);
+                top: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         .slider-book {
             margin: 0;
             background-color: $bg-color;
-            padding: 17px 10px 0px !important;
+            padding: 17px 10px 15px !important;
             
             .app-search-home {
                 display: block !important;
@@ -589,12 +615,17 @@ body {
                 display: none !important;
             }
 
+            
+
             .card-slider {
-                height: auto;
+                min-height: 205px;
                 box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
                 margin: 10px;
                 padding: 20px 10px 15px;
                 gap: 10px;
+                position: relative;
+
+                
 
                 .img-book {
                     width: 35%;
@@ -621,6 +652,15 @@ body {
             .slick-track {
                 gap: 0;
             }
+
+           
+
+                
+        
+        }
+
+        hr {
+            display: block;
         }
     }
 
@@ -664,10 +704,10 @@ body {
 
             .drop-menu {
                 position: absolute;
-                left: -10px;
-                top: 75px;
+                left: -16px;
+                top: 61px;
                 background-color: #FFF;
-                width: 200px;
+                width: 150px;
                 padding: 10px;
                 display: none;
                 border-radius: 15px;
@@ -686,7 +726,7 @@ body {
                     display: block;
                     text-align: right;
                     position: relative;
-                    font-size: 14px;
+                    font-size: 13px;
 
                     &::before {
                         content: "";
@@ -703,7 +743,7 @@ body {
                     .title-lang {
                         color: #284AC2;
                         margin: 0;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
 
                     .lang {
@@ -711,7 +751,7 @@ body {
                         align-items: center;
                         gap: 20px;
                         justify-content: flex-start;
-                        margin-bottom: 10px;
+                        margin-bottom: 5px;
     
                         .choose-lang {
                             display: flex;
@@ -719,11 +759,11 @@ body {
                             gap: 8px;
     
                             img {
-                                width: 23px;
+                                width: 20px;
                             }
 
                             span {
-                                font-size: 14px;
+                                font-size: 12px;
                             }
                         }
     
@@ -739,9 +779,10 @@ body {
                         align-items: center;
                         gap: 10px;
                         justify-content: flex-start;
+                        font-size: 13px;
                     
                         img {
-                            width: 22px;
+                            width: 18px;
                         }
                     }
                 }
@@ -808,13 +849,12 @@ body {
                 span:first-of-type{
                     font-size: 12px;
                     color: #6A6A6A;
-                    margin-left: 12px;
                 }
 
-                > div:first-of-type {
+                div {
 
                     img {
-                        height: 12px;
+                        height: 10px;
                     }
                 }
 
@@ -838,13 +878,13 @@ body {
         padding-right: 10px;
     }
 
-    .card-slider {
-        flex-direction: column;
+    // .card-slider {
+    //     flex-direction: column;
 
-        .img-book {
-            width: 100% !important;
-        }
-    }
+    //     .img-book {
+    //         width: 100% !important;
+    //     }
+    // }
     
     .books-section {
         .books {

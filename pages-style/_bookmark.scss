@@ -1,0 +1,366 @@
+$bg-color: #FFF;
+$text-color: #000;
+$blue-color: #284AC2;
+
+/* Start Head Page */
+.head-page-bookmark {
+    display: flex;
+    align-items: center;
+    padding: 15px 35px;
+    gap: 10px;
+    border-bottom: 1px solid #E6E6E6;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 99;
+    height: 85px;
+    background-color: $bg-color;
+
+    .name-site {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        a {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+                width: 110px;
+            }
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        div {
+            width: 45%;
+            position: relative;
+        }
+
+        input {
+            border: none;
+            width: 100%;
+            background-color: #F3F3F3;
+            padding: 15px 40px 15px 10px;
+            border-radius: 25px;
+        }
+
+        img {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+        }
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        >a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        label {
+            padding: 15px;
+            border-radius: 50%;
+            background-color: #E1E7FF;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lang {
+            position: relative;
+            
+            >span {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                .lang-icon {
+                    width: 40px;
+                }
+            }
+
+            .choose {
+                position: absolute;
+                right: -50px;
+                top: 60px;
+                background-color: #3e5fd7;
+                padding: 15px;
+                display: none;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 13px;
+                    color: #FFF;
+                    
+
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Head Page */
+
+/* Start Aside */
+.aside-bookmark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border-left: 1px solid #E6E6E6;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 150px;
+
+    a {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #959595;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .active-page {
+        color: $blue-color;
+    }
+}
+/* End Aside */
+
+/* Start Content Bookmark page */
+.contnet-bookmark {
+    overflow: hidden;
+    margin: 85px 140px 0 0;
+    padding: 60px;
+
+    .content-container {
+        width: 100%;
+        height: 100%;
+        background-color: #F3F3F3;
+        padding: 50px 40px;
+        border-radius: 10px;
+
+        .box-mark {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 20px;
+
+            .box {
+                padding: 20px;
+                background-color: #FFF;
+                display: flex;
+                gap: 30px;
+                border-radius: 10px;
+
+                .img {
+                    img {
+                        width: 170px;
+                        height: 100%;
+                    }
+                }
+
+                .info {
+                    .head {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .name-book {
+                            p {
+                                margin-bottom: 0;
+                                margin-top: 10px;
+                                font-size: 20px;
+                                width: fit-content;
+                            }
+
+                            span {
+                                color: #656161;
+                            }
+                        }
+
+                        .mark {
+                            display: flex;
+                            align-items: center;
+                            gap: 30px;
+                        }
+                    }
+
+                    .desc {
+                        font-size: 16px;
+                        color: #656161;
+                    }
+
+                    .num-page {
+                        color: $blue-color;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Content Bookmark page */
+
+/* Start App */
+.head-bookmark-app {
+    display: none;
+}
+
+.mark-blue {
+    display: none;
+}
+
+.app-search {
+    display: none !important;
+}
+/* End App */
+
+@media(max-width: 991px) {
+    .head-page-bookmark {
+        display: none !important;
+    }
+
+    .aside-bookmark {
+        height: fit-content !important;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+        z-index: 999;
+        background-color: $bg-color;
+        padding: 15px 0 !important;
+
+        .profile-user {
+            display: none !important;
+        }
+
+        .authors {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #959595;
+            gap: 10px;
+            font-size: 14px;
+        } 
+    }
+
+    .head-bookmark-app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue-color;
+        color: #FFF;
+        position: relative;
+        height: 140px;
+
+        h2 {
+            margin: 0;
+        }
+
+        a {
+            position: absolute;
+            left: 25px;
+            top: 40%;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    .contnet-bookmark {
+        margin: 0;
+        padding: 20px !important;
+
+        .content-container {
+            background-color: #FFF;
+            padding: 0;
+
+            >h2 {
+                display: none;
+            }
+
+            .box-mark {
+                padding-bottom: 90px;
+                display: flex !important;
+                flex-direction: column;
+
+                .box {
+                    background-color: #F3F3F3;
+
+                    .img {
+                        img {
+                            width: 100px;
+                        }
+                    }
+
+                    .info {
+                        flex: 1;
+
+                        .head {
+                            flex-direction: column;
+                            gap: 15px;
+                            align-items: flex-start;
+                        }
+
+                        .desc {
+                            display: none;
+                        }
+
+                        .num-page {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mark-blue {
+            display: block !important;
+        }
+
+        .mark-black {
+            display: none !important;
+        }
+    }
+
+    .app-search {
+        display: flex !important;
+    }
+}

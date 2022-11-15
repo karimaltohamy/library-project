@@ -259,7 +259,7 @@ body {
   margin: 85px 140px 0 0;
 }
 .content-home .links-home {
-  padding: 15px 25px;
+  padding: 5px 25px;
   border-bottom: 1px solid #E6E6E6;
   position: relative;
 }
@@ -286,11 +286,8 @@ body {
   color: #343434;
   background-color: white;
   border: 1px solid #DCDCDC;
-  padding: 5px 20px;
+  padding: 0px 25px;
   border-radius: 20px;
-}
-.content-home .links-home ul li a:hover {
-  color: #F3F3F3;
 }
 .content-home .links-home ul .active-link {
   background-color: #232323;
@@ -306,14 +303,15 @@ body {
 /* End Content Page Home */
 /* Start Slider Book Home */
 .slider-book {
-  padding: 30px 25px;
+  padding: 15px 25px;
   background-color: #F5F5F5;
-  margin: 35px;
+  margin: 20px 35px;
 }
 .slider-book h2 {
   font-weight: 600;
   margin-top: 0;
-  margin-left: 18pxpx;
+  margin-left: 18px;
+  margin-bottom: 8px;
 }
 .slider-book .box-slider {
   position: relative;
@@ -469,6 +467,7 @@ hr {
 }
 .books-section h2 {
   font-weight: 600;
+  margin: 13px 0;
 }
 .books-section .books {
   display: -ms-grid;
@@ -507,8 +506,8 @@ hr {
 .books-section .books .card-book p {
   margin-top: 5px;
   margin-bottom: 0;
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   text-align: center;
 }
 .books-section .books .card-book > div {
@@ -621,7 +620,7 @@ hr {
     height: 27px;
   }
   .content-home .links-home li a {
-    padding: 2px 20px;
+    padding: 0px 20px;
     font-size: 11px;
   }
   .content-home .slider-book {
@@ -679,7 +678,7 @@ hr {
     -webkit-box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
             box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
     margin: 10px;
-    padding: 20px 10px 15px;
+    padding: 15px 10px 15px;
     gap: 10px;
     position: relative;
   }

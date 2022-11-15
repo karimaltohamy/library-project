@@ -667,7 +667,7 @@ hr {
     margin: 0;
     margin-bottom: 0px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .content-home .slider-book .next-arrow,
 .content-home .slider-book .prev-arrow {
@@ -860,7 +860,7 @@ hr {
     width: 150px;
   }
   .books-section {
-    margin: 22px 15px;
+    margin: 10px 15px;
   }
   .books-section:last-child {
     padding-bottom: 80px;

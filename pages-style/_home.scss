@@ -225,7 +225,7 @@ body {
     margin: 85px 140px 0 0;
 
     .links-home {
-        padding: 0px 25px;
+        padding: 15px 25px;
         border-bottom: 1px solid #E6E6E6;
         position: relative;
 
@@ -241,14 +241,16 @@ body {
 
             li {
                 white-space: nowrap;
-                height: 27px;
                 a {
                     color: #343434;
-                    background-color: #F3F3F3;
+                    background-color: white;
                     border: 1px solid #DCDCDC;
                     padding: 5px 20px;
                     border-radius: 20px;
-                    font-size: 12px;
+
+                    &:hover {
+                        color: #F3F3F3;
+                    }
                 }
             }
 
@@ -281,7 +283,7 @@ body {
     h2 {
         font-weight: 600;
         margin-top: 0;
-        margin-left: 20px;
+        margin-left: 18pxpx;
     }
 
     .box-slider {
@@ -339,7 +341,7 @@ body {
             background-color: $bg-color;
             padding: 20px;
             border-radius: 15px;
-            height: 220px;
+            height: 250px;
             direction: rtl;
             
             .img-book {
@@ -357,7 +359,7 @@ body {
 
                 p:first-of-type {
                     font-weight: 600;
-                    font-size: 13px !important;
+                    
                     margin: 0;
                 }
 
@@ -385,7 +387,7 @@ body {
                         color: #FFF;
                         background-color: #284AC2;
                         width: fit-content;
-                        padding: 2px 15px;
+                        padding: 5px 20px;
                         border-radius: 20px;
                         font-size: 13px;
                     }
@@ -430,12 +432,12 @@ hr {
             box-shadow: 0 0 10px 0 #b6b6b6a9;
             display: block;
             color: $text-color;
-            min-height: 430px;
-            padding: 20px 10px ;
+            min-height: 385px;
+            padding: 30px 10px 20px;
             text-align: center;
             position: relative;
+            border-radius: 15px;
 
-            
             .img-book {
                 display: flex;
                 justify-content: center;
@@ -449,9 +451,9 @@ hr {
             }
     
             p {
-                margin-top: 0px !important;
-                margin-bottom: -5px !important;
-                font-size: 17px;
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 19px;
                 font-weight: 500;
                 text-align: center;
             }
@@ -494,7 +496,7 @@ hr {
         gap: 0;
         z-index: 999;
         background-color: $bg-color;
-        padding: 15px 0 !important;
+        padding: 12px 0 !important;
 
         // .profile-user {
         //     display: none !important;
@@ -553,17 +555,27 @@ hr {
 
         .links-home {
             display: none;
+            padding: 0 25px;
             margin-top: 10px;
 
             &::before {
                 content: "";
                 position: absolute;
-                height: 2px;
+                height: 1px;
                 width: 95%;
                 background-color: rgb(228 228 228);
                 top: -10px;
                 left: 50%;
                 transform: translateX(-50%);
+            }
+
+            li {
+                white-space: nowrap;
+                height: 27px;
+                a {
+                    padding: 2px 20px;
+                    font-size: 11px;
+                }
             }
         }
 
@@ -582,9 +594,10 @@ hr {
                     display: block;
                     margin: auto;
                     font-size: 18px;
-                    padding: 10px;
+                    padding: 8px;
                     border: 1px solid #284AC2;
                     border-radius: 20px;
+                    font-size: 14px;
                 }
 
                 span {
@@ -594,8 +607,8 @@ hr {
                     transform: translateY(-50%);
                     left: 25px;
                     background-color: #284AC2;
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -618,7 +631,7 @@ hr {
             
 
             .card-slider {
-                min-height: 205px;
+                height: 200px;
                 box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.438);
                 margin: 10px;
                 padding: 20px 10px 15px;
@@ -630,7 +643,7 @@ hr {
                 }
 
                 p:first-of-type {
-                    font-size: 16px !important
+                    font-size: 13px !important;
                 }
 
                 p:last-of-type {
@@ -643,6 +656,8 @@ hr {
                     }
                     a {
                         font-size: 13px !important;
+                        padding: 2px 15px  !important;
+                        font-size: 13px;
                     }
                 }
             }
@@ -659,6 +674,16 @@ hr {
 
         hr {
             display: block;
+        }
+
+        .books {
+            .card-book {
+                p {
+                    margin-top: 0px !important;
+                    margin-bottom: -5px !important;
+                    font-size: 17px;
+                }
+            }
         }
     }
 
@@ -810,7 +835,10 @@ hr {
 
     .books-section {
         margin: 22px 15px;
-        padding-bottom: 80px;
+        
+        &:last-child {
+            padding-bottom: 80px;
+        }
 
         h2 {
             display: none;
@@ -825,7 +853,7 @@ hr {
                 text-align: center;
                 padding: 0 0 0 0;
                 overflow: hidden;
-                border-radius: 15px;
+                
 
                 .img-book {
                     margin: 0 !important;
@@ -859,10 +887,15 @@ hr {
                 .mark-icon {
                     left: 10px !important;
                     top: 10px !important;
+
+                    img {
+                        width: 37px;
+                    }
                 }
             }
         }
     }
+
 }
 
 @media (max-width: 310px) {
@@ -887,13 +920,6 @@ hr {
     .books-section {
         .books {
             grid-template-columns: repeat(1, 1fr);
-    
-            .mark-icon {
-                
-                img {
-                    width: 40px;
-                }
-            }
         }
     }
 }
